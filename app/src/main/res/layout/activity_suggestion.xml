@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000080"
+    android:orientation="vertical"
+    tools:context=".Suggestion">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/gambar"
+            android:src="@drawable/ligashopee"
+            android:layout_marginTop="50dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to :"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="10dp">
+    </androidx.cardview.widget.CardView>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextto"
+            android:text="wirantoismail4@gmail.com"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress">
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject :"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="10dp">
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextsubject"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress">
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message :"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="10dp">
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextmessage"
+            android:textColor="#ffffff"
+            android:gravity="start|top"
+            android:lines="10"
+            android:inputType="textEmailAddress">
+        </EditText>
+    </RelativeLayout>
+    <Button
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="#e60026"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_send"
+        android:text="send"/>
+
+
+
+</LinearLayout>

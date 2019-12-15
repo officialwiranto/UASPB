@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="#000080"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        android:id="@+id/shopee"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ligashopee"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTeam"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@+id/shopee"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/listTeam"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#e60026">
+
+            <TextView
+                android:id="@+id/textTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="TEAM"
+                android:textColor="#ffffff"
+                android:textSize="30sp"></TextView>
+
+            <Button
+                android:textColor="#ffffff"
+                android:background="#000080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="147dp"
+                android:layout_marginBottom="13dp"
+                android:text="Klik Disini"
+                android:layout_toRightOf="@+id/textTeam"
+                android:id="@+id/BtnTeam">
+
+
+            </Button>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardBestplayer"
+        android:layout_below="@+id/cardTeam"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/listBestPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#e60026">
+
+            <TextView
+                android:id="@+id/textbestplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="BEST PLAYER"
+                android:textColor="#ffffff"
+                android:textSize="30sp"></TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toRightOf="@+id/textbestplayer"
+                android:background="#000080"
+                android:text="Klik Disini"
+                android:id="@+id/btnbestplayer"
+                android:textColor="#ffffff">
+
+
+            </Button>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardbestStarting"
+        android:layout_below="@+id/cardBestplayer"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/listStarting"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#e60026">
+
+            <TextView
+                android:id="@+id/textStarting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="BEST STARTING"
+                android:textColor="#ffffff"
+                android:textSize="30sp"></TextView>
+
+            <Button
+                android:id="@+id/btnstarting"
+                android:textColor="#ffffff"
+                android:background="#000080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="13dp"
+                android:text="Klik Disini"
+                android:layout_toRightOf="@+id/textStarting">
+
+
+            </Button>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#000080"
+        android:layout_below="@+id/cardbestStarting"
+        android:layout_marginBottom="10dp"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:background="#e60026"
+    >
+
+        <TextView
+            android:id="@+id/saran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="SUGGESTION"
+            android:textColor="#ffffff"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnsuggestion"
+            android:textColor="#ffffff"
+            android:background="#000080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="13dp"
+            android:text="Klik Disini"
+            android:layout_toRightOf="@+id/saran">
+        </Button>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+    </ScrollView>
